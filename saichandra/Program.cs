@@ -11,6 +11,8 @@ namespace saichandra
         static void Main(string[] args)
         {
             Console.WriteLine( "Hi");
+            Console.WriteLine("Hisss");
+            Console.ReadLine();
         }
     }
 }
