@@ -31,9 +31,6 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
-
-steps:
-- script: ./buildSomething.sh
 - task: CopyFiles@2
   inputs:
     contents: '_buildOutput/**'
