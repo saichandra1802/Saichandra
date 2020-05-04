@@ -31,7 +31,7 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
-- task: PublishBuildArtifacts@1
+
 steps:
 - script: ./buildSomething.sh
 - task: CopyFiles@2
