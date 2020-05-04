@@ -31,11 +31,13 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+    
+    
 - task: CopyFiles@2
   inputs:
-    contents: '_buildOutput/**'
-    targetFolder: $(Build.ArtifactStagingDirectory)
-- task: PublishBuildArtifacts@1
+    targetFolder: '$(Build.ArtifactStagingDirectory)'    
+
+- task: PublishBuildArtifacts@1    
+  displayName: 'Publish Artifact: drop'
   inputs:
-    pathToPublish: $(Build.ArtifactStagingDirectory)
-    artifactName: MyBuildOutputs
+    PathtoPublish: '$(build.artifactstagingdirectory)'
