@@ -52,7 +52,9 @@
     <Content Include="JsonTemplates\j.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="JsonTemplates\TextFile1.txt" />
+    <Content Include="JsonTemplates\TextFile1.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
