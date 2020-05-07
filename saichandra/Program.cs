@@ -28,6 +28,7 @@ namespace saichandra
             Console.WriteLine("dev");
 
             Console.WriteLine("dev1");
+            Console.WriteLine("stage");
             return a + b + c;
         }
       
