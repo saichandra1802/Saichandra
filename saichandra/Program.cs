@@ -10,12 +10,22 @@ namespace saichandra
     {
         static void Main(string[] args)
         {
-            Console.WriteLine( "Hi");
-            Console.WriteLine("xxxxxxx");
-            Console.WriteLine("Test");
-            Console.ReadLine();
 
+            A a = new A();
+            a.Add(1, 2, 3); 
+              a.Add(1, 2);
 
+        }
+    }
+ public  class A
+    {
+        public int Add(int a, int b)
+        {
+            return a + b;
+        }
+        public int Add(int a, int b, int c = 10)
+        {
+            return a + b + c;
         }
     }
 }
